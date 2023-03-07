@@ -221,9 +221,18 @@ for (let i = 0; i < miCamino.cimas.length; i++) {
 }
 
 //6º: para llegar a la cima tendremos que darnos aliento y decirnos la frase que esta divida y que tiene que quedar así: "Tranquilo,lo peor ha pasado ya.¡Animo!
-
-
+let mensaje = miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV;
+let mensajeFinal = [];
+for (const elemento of mensaje) {
+  
+  if (typeof elemento === "string") {
+    mensajeFinal.push(elemento);
+  }
+}
+console.log(mensajeFinal.join(" "));
 
 //7º: mostraremos el mensaje final guardado en la cima
+
+
 
 //por ultimo como bonus,en un console.log mostraremos por pantalla las urls de todas las imagenes de los materiales y en otro haremos la media de la altitud de todas la cimas que hemos subido.
